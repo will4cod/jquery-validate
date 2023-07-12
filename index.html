@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/script/jquery.validate.min.js"></script>
+    <script src="/script/additional-methods.min.js"></script>
+    <script src="/script/localization/messages_pt_BR.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <form class="login-form" id="formLogin" method="post">
+            <h2>Login</h2>
+            <input type="text" placeholder="Name" name="nomeLogin" class="box">
+            <input type="password" placeholder="Password" name="passwordLogin" class="box" >
+            <span class="erro">Login/Senha incorretos</span>
+            <button type="submit" name="button">Login</button>
+        </form>
+
+        <form class="sign-up-form" id="formCadastro">
+            <h2>Sign up</h2>
+            <input type="text" placeholder="Name" name="nomeCad" class="box">
+            <input type="email" placeholder="Email" name="emailCad" class="box">
+            <input type="password" placeholder="Password" name="passwordCad" class="box">
+            <input type="password" placeholder="Password Confrm" name="passwordCadConfirm" class="box">
+            <span class="erro">Já possui uma conta criada com este login</span>
+            <button type="submit" name="button">Sign Up</button>
+        </form>
+    </div>
+
+    <div class="switch-buttons">
+        <input type="button" class="switch-login" value="Login">
+        <input type="button" class="switch-sign-up" value="Sign Up">
+    </div>
+
+    <script src="/script/index.js"></script>
+    <script src="/script/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+.content{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4CAF50;
+    width: 70%;
+    margin: 2em auto;
+    box-shadow: 0 0 10px #000;
+}
+
+.content p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.bear-body{
+    position: relative;
+    height: 0;
+    width: 94px;
+    border-bottom: 150px solid rgb(154,102,52);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-radius: 10px 10px 0 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.orelhas{
+    width: 94px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -20px;
+}
+
+.orelha{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(154,102,52);
+    border-radius: 20px 20px 0 0;
+}
+
+/* .orelha::after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    margin: 5px auto;
+} */
+
+.olhos{
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.eye{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    /* position: absolute; */
+}
+
+/* .right{
+    height: 5px;
+} */
+
+.nariz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cima{
+    display: block;
+    width: 17px;
+    height: 3px;
+    background: black;
+    transform: rotate(200deg);
+    border-radius: 2px;
+}
+
+.baixo{
+    display: block;
+    width: 17px;
+    height: 3px;
+    background: black;
+    transform: rotate(176deg);
+    border-radius: 2px;
+}
+
+.boca{
+    display: block;
+    width: 50px;
+    height: 110px;
+    border-radius: 8px;
+    border-bottom: 8px solid rgb(12, 12, 12);
+    border-radius: 100%;
+}
+
+.grafata{
+    box-sizing: border-box;
+    position: absolute;
+    left: -14px;
+    top: 149px;  
+    height: 0;
+    width: 94px;
+    border-bottom: 15px solid gray;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    transform: rotateX(180deg);
+    z-index: 1;
+}
